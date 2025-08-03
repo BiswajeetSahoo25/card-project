@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS card style</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+       body{
+           background-color: gray;
+       }
+       .card {
+           width: 300px;
+           height: 550px;
+           background-color: white;
+           border-radius: 10px;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+           margin: 50px auto;
+           /* display: flex;
+           align-items: center;
+           justify-content: center; */
+           font-family: Arial, sans-serif;
+           color: rgb(17, 5, 5);
+       }.image {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-top: 20px;
+           padding: 10px;
+           margin: 10px;
+       }
+       .content {
+           padding: 10px 15px;
+           /* text-align: center; */
+       }
+       
+       .content h2{
+           padding: 10px 10px 0px 10px;
+           /* text-align: center; */
+           font-size: 24px;
+           font-weight: bold;
+        }
+
+       .content p {
+           padding: 10px ;
+           /* text-align: center; */
+           font-size: 16px;
+           line-height: 1.5;
+           color: gray;
+           font-family: "Libertinus Sans", sans-serif;
+           font-weight: 700;
+           font-style: normal;
+       }
+       .capsules {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: left;
+           padding: 5px 10px 0px 15px; /* top right bottom left */
+           /* margin: 10px; */
+       }
+
+       .capsules span {
+           display: inline-block;
+           background-color: #f0f0f0;
+           color: #333;
+           padding:5px 20px 5px 20px; /* top right bottom left */
+           margin: 5px;
+           border-radius: 20px;
+           font-size: 12px;
+           /* border: 2px solid black; */
+           font-family: 'Poppins', 'Roboto', 'Montserrat', Arial, sans-serif;
+       }
+       .button {
+           background-color: #007bff;
+           color: white;
+           padding: 0px 18px ;
+           border: none;
+           border-radius: 20px;
+           cursor: pointer;
+           text-align: center;
+           margin: 0px auto 10px auto;
+           display: block;
+           font-size: 14px;
+           width: fit-content;
+           font-family: 'Poppins', 'Roboto', 'Montserrat', Arial, sans-serif;
+           font-weight: 600;
+           font-size: small;
+       }
+         .button span {
+              padding: 20px 2px;
+              margin: 2px 0px;
+              
+         }
+       .button:hover {
+           background-color: #0056b3;
+       }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="card">
+
+
+        <div class="image">
+            <img src="https://media.istockphoto.com/id/468992257/photo/taking-a-day-off-from-his-hectic-lifestyle.jpg?s=612x612&w=0&k=20&c=UlEMqlUjtya_Laywd_S9qmVzQQiNNOxyMijAXr7spAI=" alt="Image" style="width: 278px; height:200px; border-radius: 10px;">
+        </div>
+        
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+             
+        </div>
+        <div class="content">
+            <h2>Nature</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adi   pisicing elit. Dolores quam eum laboriosam reiciendis id officiis consequuntur, quasi dolorem perspiciatis maxime earum animi velit!</p>
+        </div>
+
+        <div class="button">
+           <span>Read More</span>
+        </div>
+    </div>
+</body>
+</html>
